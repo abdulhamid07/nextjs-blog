@@ -46,7 +46,7 @@ function detail() {
             our green. Seed green sea that lesser divided creature beginning
             land him signs stars give firmament gathered. Wherein there their
             morning a he grass. Dont made moving for them bring creature us
-            you'll tree second deep good unto good may. Us yielding.
+            youll tree second deep good unto good may. Us yielding.
           </p>
           <p>
             Have. Man upon set multiply moved from under seasons abundantly
