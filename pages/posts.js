@@ -7,7 +7,8 @@ import { useState } from "react";
 import dummyPosts from "../utils/posts.json"
 
 function posts() {
-  const [posts, setPosts] = useState(dummyPosts)
+  // const [posts, setPosts] = useState(dummyPosts)
+  const posts = dummyPosts
   return (
     <Layout>
       <Head>

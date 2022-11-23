@@ -3,6 +3,7 @@ import Container from "@components/Container";
 import PostMetaTitle from "@components/PostMetaTitle";
 import PostAuthor from "@components/PostAuthor";
 import Head from "next/head";
+import Image from "next/image";
 
 function detail() {
   return (
@@ -27,7 +28,7 @@ function detail() {
           />
         </div>
         <div className="md:w-10/12 w-full mx-auto my-10">
-          <img
+          <Image
             src={"/detail-image.png"}
             alt="img-thumbnail"
             className="w-full rounded-lg"

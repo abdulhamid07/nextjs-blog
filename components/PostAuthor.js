@@ -1,7 +1,9 @@
+import Image from "next/image";
+
 function PostAuthor({authorAvatar, authorName, authorJob}) {
   return (
     <div className="flex items-center mt-5">
-      <img
+      <Image
         src={authorAvatar}
         alt="author"
         className="w-14 h-14 rounded-full object-cover"

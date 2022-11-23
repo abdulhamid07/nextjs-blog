@@ -1,5 +1,6 @@
 import InfoPost from "./InfoPost";
 import Link from "next/link";
+import Image from "next/image";
 
 function FeaturedPost() {
   return (
@@ -7,7 +8,7 @@ function FeaturedPost() {
       <div className="flex -mx-4 items-center flex-wrap">
         <div className="lg:w-8/12 md:w-7/12 px-4">
           <Link href="/detail">
-            <img
+            <Image
               src="/featured-thumbnail.png"
               alt="feature-image"
               className="rounded-xl w-full md:mb-0 mb-4"
