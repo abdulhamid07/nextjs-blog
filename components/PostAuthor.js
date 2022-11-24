@@ -6,6 +6,8 @@ function PostAuthor({authorAvatar, authorName, authorJob}) {
       <Image
         src={authorAvatar}
         alt="author"
+        width='1000'
+        height='1000'
         className="w-14 h-14 rounded-full object-cover"
       />
       <div className="ml-4">

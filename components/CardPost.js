@@ -2,17 +2,20 @@ import InfoPost from "./InfoPost";
 import Link from "next/link";
 import Image from "next/image";
 
-function CardPost({ thumbnail, ...infoPost }) {
+function CardPost(props) {
+  const { thumbnail } = props.attributes;
   return (
     <article>
-      <Link href="/detail">
+      <Link href={`/post/${props.attributes.slug}`}>
         <Image
-          src={thumbnail}
+          src={`${process.env.NEXT_PUBLIC_API_URL}${thumbnail.data.attributes.formats.thumbnail.url}`}
           alt="img-thumbnail"
+          width={thumbnail.data.attributes.formats.thumbnail.height}
+          height={thumbnail.data.attributes.formats.thumbnail.width}
           className="w-full rounded mb-4"
         />
       </Link>
-      <InfoPost {...infoPost} />
+      <InfoPost {...props.attributes} />
     </article>
   );
 }
